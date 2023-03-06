@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--图标尺寸-->
+    <dimen name="ic_size_xxl">256dp</dimen>
+    <dimen name="ic_size_xl">128dp</dimen>
+    <dimen name="ic_size_l">64dp</dimen>
+    <dimen name="ic_size_m">48dp</dimen>
+    <dimen name="ic_size_s">36dp</dimen>
+    <dimen name="ic_size_xs">24dp</dimen>
+    <dimen name="ic_size_xxs">12dp</dimen>
+    <!--文字尺寸-->
+    <dimen name="text_size_xxl">64sp</dimen>
+    <dimen name="text_size_xl">48sp</dimen>
+    <dimen name="text_size_l">36sp</dimen>
+    <dimen name="text_size_m">24sp</dimen>
+    <dimen name="text_size_s">16sp</dimen>
+    <dimen name="text_size_xs">12sp</dimen>
+    <dimen name="text_size_xxs">8sp</dimen>
+    <!--高度-->
+    <dimen name="layout_height_xxl">256dp</dimen>
+    <dimen name="layout_height_xl">128dp</dimen>
+    <dimen name="layout_height_l">64dp</dimen>
+    <dimen name="layout_height_m">48dp</dimen>
+    <dimen name="layout_height_s">36dp</dimen>
+    <dimen name="layout_height_xs">24dp</dimen>
+    <dimen name="layout_height_xxs">12dp</dimen>
+    <!--宽度-->
+    <dimen name="layout_width_xxl">256dp</dimen>
+    <dimen name="layout_width_xl">128dp</dimen>
+    <dimen name="layout_width_l">64dp</dimen>
+    <dimen name="layout_width_m">48dp</dimen>
+    <dimen name="layout_width_s">36dp</dimen>
+    <dimen name="layout_width_xs">24dp</dimen>
+    <dimen name="layout_width_xxs">12dp</dimen>
+    <!--圆角半径-->
+    <dimen name="corner_radius">6dp</dimen>
+    <!--外边距-->
+    <dimen name="margin_xl">24dp</dimen>
+    <dimen name="margin_l">16dp</dimen>
+    <dimen name="margin_m">12dp</dimen>
+    <dimen name="margin_s">6dp</dimen>
+    <!--内边距-->
+    <dimen name="padding_m">12dp</dimen>
+    <dimen name="padding_s">6dp</dimen>
+</resources>

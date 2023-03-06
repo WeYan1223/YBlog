@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cn.yblog.widget.TopBar
+        android:id="@+id/edit_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/word_edit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:left_imb_src="@drawable/ic_arrow_back_24dp"
+        app:show_left_imb="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_til_title"
+                style="@style/OutLinedBoxStyle"
+                android:layout_height="wrap_content"
+                android:hint="@string/word_title"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_til_content"
+                style="@style/OutLinedBoxStyle"
+                android:layout_height="wrap_content"
+                android:hint="@string/word_content"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/edit_btn_publish"
+                style="@style/OutLinedButtonStyle"
+                android:text="@string/word_publish" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

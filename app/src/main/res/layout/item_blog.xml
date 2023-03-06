@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_m"
+    android:layout_marginTop="@dimen/margin_s"
+    android:layout_marginEnd="@dimen/margin_m"
+    android:layout_marginBottom="@dimen/margin_s"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_m">
+
+        <com.cn.yblog.widget.RoundHeader
+            android:id="@+id/item_blog_round_header"
+            android:layout_width="@dimen/layout_width_s"
+            android:layout_height="@dimen/layout_height_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:name_size="@dimen/text_size_s" />
+
+        <TextView
+            android:id="@+id/item_blog_tv_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="2022.12.23 18:00:00"
+            app:layout_constraintStart_toStartOf="@id/item_blog_tv_author_name"
+            app:layout_constraintTop_toTopOf="@id/item_blog_round_header" />
+
+        <TextView
+            android:id="@+id/item_blog_tv_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_s"
+            android:maxLines="1"
+            android:text="子疯"
+            app:layout_constraintBottom_toBottomOf="@id/item_blog_round_header"
+            app:layout_constraintStart_toEndOf="@id/item_blog_round_header" />
+
+        <TextView
+            android:id="@+id/item_blog_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:text="震惊！！！真相竟是..."
+            android:textColor="#333"
+            android:textSize="@dimen/text_size_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_blog_round_header" />
+
+        <ImageButton
+            android:id="@+id/item_blog_imb_more"
+            android:layout_width="@dimen/layout_width_s"
+            android:layout_height="@dimen/layout_height_s"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more_24dp"
+            app:layout_constraintBottom_toTopOf="@id/item_blog_imb_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/item_blog_imb_favorite"
+            android:layout_width="@dimen/layout_width_s"
+            android:layout_height="@dimen/layout_height_s"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/selector_favorite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_blog_imb_more" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

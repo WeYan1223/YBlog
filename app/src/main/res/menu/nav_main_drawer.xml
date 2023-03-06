@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/nav_main_drawer_group_mine">
+        <item
+            android:id="@+id/nav_main_drawer_subtitle_mine"
+            android:title="@string/drawer_word_mine">
+            <menu>
+                <item
+                    android:id="@+id/mine_my_blog"
+                    android:icon="@drawable/ic_person_24dp"
+                    android:title="@string/word_my_blog" />
+
+                <item
+                    android:id="@+id/mine_favorites"
+                    android:icon="@drawable/ic_favorites_24dp"
+                    android:title="@string/word_favorites" />
+
+                <item
+                    android:id="@+id/mine_recycler_bin"
+                    android:icon="@drawable/ic_delete_24dp"
+                    android:title="@string/word_recycle_bin" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <group android:id="@+id/nav_main_drawer_group_other">
+        <item
+            android:id="@+id/nav_main_drawer_subtitle_other"
+            android:title="@string/drawer_word_other">
+            <menu>
+                <item
+                    android:id="@+id/other_about_us"
+                    android:icon="@drawable/ic_info_24dp"
+                    android:title="@string/drawer_word_about_us" />
+
+                <item
+                    android:id="@+id/other_logout"
+                    android:icon="@drawable/ic_logout_24dp"
+                    android:title="@string/drawer_word_logout" />
+
+                <item
+                    android:id="@+id/other_exit_app"
+                    android:icon="@drawable/ic_power_24dp"
+                    android:title="@string/drawer_word_exit_app" />
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

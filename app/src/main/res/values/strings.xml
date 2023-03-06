@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">YBlog</string>
+    <!--通用-->
+    <string name="word_content">内容</string>
+    <string name="word_comment">评论</string>
+    <string name="word_edit">编辑</string>
+    <string name="word_loading">加载中</string>
+    <string name="word_login">登录</string>
+    <string name="word_modify">修改</string>
+    <string name="word_delete">删除</string>
+    <string name="word_recovery">恢复</string>
+    <string name="word_password">密码</string>
+    <string name="word_publish">发布</string>
+    <string name="word_my_blog">我的博客</string>
+    <string name="word_favorites">收藏夹</string>
+    <string name="word_recycle_bin">回收站</string>
+    <string name="word_publishing">正在发布</string>
+    <string name="word_register">注册</string>
+    <string name="word_title">标题</string>
+    <string name="word_username">用户名</string>
+    <string name="error_request_timeout">请求超时</string>
+    <string name="error_fast_click">点这么快 给我试bug呢</string>
+    <string name="normal_refresh_success">刷新成功</string>
+    <!--SplashActivity-->
+    <string name="splash_error_db_connect_failure">数据库连接失败\n请联系开发者解决</string>
+    <string name="splash_normal_db_connect_success">数据库连接成功</string>
+    <!--LoginActivity-->
+    <string name="login_error_empty_username">用户名不能为空</string>
+    <string name="login_error_empty_password">密码不能为空</string>
+    <string name="login_error_login_failure">登陆失败\n请检查密码或用户名是否正确输入</string>
+    <string name="login_normal_login_success">登陆成功</string>
+    <!--RegisterActivity-->
+    <string name="register_word_re_password">确认密码</string>
+    <string name="register_error_empty_username">用户名不能为空</string>
+    <string name="register_error_empty_password">密码不能为空</string>
+    <string name="register_error_empty_re_password">确认密码不能为空</string>
+    <string name="register_error_password_not_match">两次密码不匹配</string>
+    <string name="register_error_register_failure">注册失败\n用户名重复</string>
+    <string name="register_error_register_failure_un_know">注册失败\n请重试</string>
+    <string name="register_normal_register_success">注册成功</string>
+    <string name="register_normal_to_login_soon">即将跳转至登录界面</string>
+    <!--MainActivity-->
+    <string name="drawer_word_mine">我的</string>
+    <string name="drawer_word_other">其他</string>
+    <string name="drawer_word_logout">退出登录</string>
+    <string name="drawer_word_exit_app">退出应用</string>
+    <string name="drawer_word_about_us">关于我们</string>
+    <string name="drawer_normal_welcome">欢迎你，%s～～～</string>
+    <string name="main_word_main_interface">主界面</string>
+    <string name="main_error_refresh_failure">刷新失败\n请重试</string>
+    <string name="main_normal_favorite_success">收藏成功</string>
+    <string name="main_normal_un_favorite_success">取消收藏</string>
+    <!--EditActivity-->
+    <string name="edit_error_empty_content">内容不能为空</string>
+    <string name="edit_error_empty_title">标题不能为空</string>
+    <string name="edit_error_modify_failure">修改失败\n请重试</string>
+    <string name="edit_error_publish_failure">发布失败\n请重试</string>
+    <string name="edit_normal_modify_success">修改成功\n即将返回</string>
+    <string name="edit_normal_publish_success">发布成功\n即将返回</string>
+    <!--FavoritesActivity-->
+    <string name="fav_normal_favorite_success">收藏成功</string>
+    <string name="fav_normal_un_favorite_success">取消收藏</string>
+    <!--PublishActivity-->
+    <string name="publish_normal_delete_success">删除成功\n可在回收站进行恢复</string>
+    <!--RecyclerBinActivity-->
+    <string name="bin_normal_delete_success">删除成功</string>
+    <string name="bin_normal_recovery_success">恢复成功</string>
+    <string name="bin_normal_clear_success">清空回收站</string>
+    <!--BlogActivity-->
+    <string name="blog_error_empty_content">内容不能为空</string>
+    <string name="blog_error_comment_failure">评论失败\n请稍后重试</string>
+    <string name="blog_normal_comment_success">评论发布</string>
+    <string name="blog_normal_comment_counts">评论 %d</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_m">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_comment_til_comment"
+        style="@style/OutLinedBoxStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="写评论"
+        app:counterEnabled="true"
+        app:layout_constraintEnd_toStartOf="@id/dialog_comment_btn_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="text|textMultiLine"
+            android:maxHeight="@dimen/layout_height_xl" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/dialog_comment_btn_send"
+        android:layout_width="@dimen/layout_width_m"
+        android:layout_height="@dimen/layout_height_m"
+        android:layout_margin="@dimen/margin_m"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_send_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

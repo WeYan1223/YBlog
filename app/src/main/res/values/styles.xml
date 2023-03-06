@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OutLinedBoxStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_l</item>
+        <item name="android:layout_margin">@dimen/margin_m</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/corner_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/corner_radius</item>
+        <item name="boxBackgroundColor">@null</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="OutLinedButtonStyle" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_l</item>
+        <item name="android:layout_margin">@dimen/margin_m</item>
+        <item name="android:textSize">@dimen/text_size_s</item>
+        <item name="strokeColor">@color/black</item>
+    </style>
+
+    <style name="TextButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_m</item>
+        <item name="android:layout_margin">@dimen/margin_m</item>
+        <item name="android:textSize">@dimen/text_size_s</item>
+    </style>
+
+    <style name="BottomDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

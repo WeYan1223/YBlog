@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.YBlog" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_400</item>
+        <item name="colorPrimaryVariant">@color/blue_400</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/BaseWindowAnimationStyle</item>
+
+
+    </style>
+
+    <style name="BaseWindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_activity_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_activity_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_activity_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_activity_out</item>
+    </style>
+</resources>

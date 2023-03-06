@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cn.yblog.widget.TopBar
+        android:id="@+id/register_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/word_register"
+        app:layout_constraintTop_toTopOf="parent"
+        app:left_imb_src="@drawable/ic_arrow_back_24dp"
+        app:show_left_imb="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_til_username"
+        style="@style/OutLinedBoxStyle"
+        android:hint="@string/word_username"
+        app:layout_constraintTop_toBottomOf="@id/register_top_bar"
+        app:startIconDrawable="@drawable/ic_person_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_til_password"
+        style="@style/OutLinedBoxStyle"
+        android:hint="@string/word_password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@id/register_til_username"
+        app:startIconDrawable="@drawable/ic_lock_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_til_re_password"
+        style="@style/OutLinedBoxStyle"
+        android:hint="@string/register_word_re_password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@id/register_til_password"
+        app:startIconDrawable="@drawable/ic_lock_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/register_btn_register"
+        style="@style/OutLinedButtonStyle"
+        android:text="@string/word_register"
+        app:layout_constraintTop_toBottomOf="@id/register_til_re_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <attr name="android:title" />
+        <attr name="show_left_imb" format="boolean" />
+        <attr name="show_right_imb" format="boolean" />
+        <attr name="left_imb_src" format="reference" />
+        <attr name="right_imb_src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="android:summary" />
+        <attr name="src_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundHeader">
+        <attr name="android:name" />
+        <attr name="name_size" format="dimension"/>
+    </declare-styleable>
+</resources>

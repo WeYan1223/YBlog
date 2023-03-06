@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cn.yblog.widget.TopBar
+        android:id="@+id/publish_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/word_my_blog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:left_imb_src="@drawable/ic_arrow_back_24dp"
+        app:show_left_imb="true" />
+
+    <com.cn.yblog.widget.EmptyView
+        android:id="@+id/publish_empty_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/publish_refresh_blogs"
+        app:layout_constraintEnd_toEndOf="@id/publish_refresh_blogs"
+        app:layout_constraintStart_toStartOf="@id/publish_refresh_blogs"
+        app:layout_constraintTop_toTopOf="@id/publish_refresh_blogs" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/publish_refresh_blogs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/blue_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/publish_top_bar">
+
+        <com.cn.yblog.widget.EmptyRecyclerView
+            android:id="@+id/publish_rv_blogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
